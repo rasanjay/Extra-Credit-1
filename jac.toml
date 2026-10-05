@@ -12,6 +12,14 @@ entry-point = "main"
 kind = "cli"
 entry-point = "cli"
 
+[apps.mobile]
+kind = "mobile"
+entry-point = "mobile.main"
+platform = "ios"
+
+[apps.mobile.dependencies.npm]
+react-native-web = "^0.21.0"
+
 [dependencies.npm]
 react = "^19.2.0"
 react-dom = "^19.2.0"
